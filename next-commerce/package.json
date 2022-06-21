@@ -1,5 +1,5 @@
 {
-  "name": "commerce",
+  "name": "next-commerce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
-    "@chakra-ui/spinner": "^2.0.2",
-    "@chakra-ui/system": "^2.1.3",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@reduxjs/toolkit": "^1.8.2",
     "axios": "^0.27.2",
     "formik": "^2.2.9",
     "framer-motion": "^6.3.11",
@@ -25,7 +22,6 @@
     "react-icons": "^4.4.0",
     "react-redux": "^8.0.2",
     "redux": "^4.2.0",
-    "redux-thunk": "^2.4.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {
