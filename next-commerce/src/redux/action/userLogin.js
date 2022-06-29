@@ -11,15 +11,27 @@ export function userLogin(values, setSubmitting) {
         },
       });
 
-      if (!res.data.length) {
+      console.log(res.data.result);
+
+      const userData = {
+        id: 2,
+        username: "steven",
+        email: "steven@mail.com",
+        password: "pass123",
+        full_name: "udin sukamandi",
+      };
+
+      // const userData = res.data.result;
+
+      if (!res.data.result) {
         throw new Error("User not found");
       }
 
-      if (res.data[0].password !== values.password) {
+      if (userData.password !== values.password) {
         throw new Error("Wrong password");
       }
 
-      const userData = res.data[0];
+      // const userData = user;
       const stringifiedUserData = JSON.stringify(userData);
 
       console.log(userData);
