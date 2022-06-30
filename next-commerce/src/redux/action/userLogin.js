@@ -11,17 +11,9 @@ export function userLogin(values, setSubmitting) {
         },
       });
 
-      console.log(res.data.result);
+      // console.log(res.data.result);
 
-      const userData = {
-        id: 2,
-        username: "steven",
-        email: "steven@mail.com",
-        password: "pass123",
-        full_name: "udin sukamandi",
-      };
-
-      // const userData = res.data.result;
+      const userData = res.data.result;
 
       if (!res.data.result) {
         throw new Error("User not found");
@@ -32,7 +24,7 @@ export function userLogin(values, setSubmitting) {
       }
 
       // const userData = user;
-      const stringifiedUserData = JSON.stringify(userData);
+      const stringifiedUserData = JSON.stringify(userData.email);
 
       console.log(userData);
 
